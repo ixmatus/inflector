@@ -39,14 +39,15 @@ class English(Base):
             ['(?i)$' , 's']
         ]
         
-        uncountable_words = ['equipment', 'information', 'rice', 'money', 'species', 'series', 'fish', 'sheep']
+        uncountable_words = ['equipment', 'information', 'rice', 'money', 'species', 'series', 'fish', 'sheep', 'deer']
         
         irregular_words = {
             'person' : 'people',
             'man' : 'men',
             'child' : 'children',
             'sex' : 'sexes',
-            'move' : 'moves'
+            'move' : 'moves',
+            'staff' : 'staves',
         }
         
         lower_cased_word = word.lower();
