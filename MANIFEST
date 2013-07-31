@@ -2,3 +2,4 @@
 README.md
 setup.cfg
 setup.py
+inflector/__init__.py

@@ -1,5 +1,6 @@
 import sys
-from distutils.core import setup
+
+from setuptools import setup, find_packages
 
 if not '2.5' <= sys.version:
     raise ImportError('Python version not supported')
@@ -11,7 +12,7 @@ with open("LICENSE", 'r') as f:
 
 setup(
     name="Inflector",
-    version="2.0.4",
+    version="2.0.7",
     description="A port of ROR's inflector class",
     classifiers=["Intended Audience :: Developers",
         "License :: OSI Approved :: Python Software Foundation License",
@@ -23,4 +24,6 @@ setup(
     url="https://github.com/ixmatus/inflector",
     license=LICENSE,
     test_suite='tests',
+    data_files=[('', ["LICENSE", "README.md", "CHANGES", "DEBT"])],
+    packages=["inflector"]
 )
