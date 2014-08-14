@@ -8,6 +8,7 @@ VERSION = open(os.path.join(here, 'VERSION')).read()
 
 setup(name='Inflector',
       version=VERSION.strip(),
+      description='Inflector for Python',
       long_description=README,
       classifiers=["Intended Audience :: Developers",
                    "License :: OSI Approved :: Python Software Foundation License",
