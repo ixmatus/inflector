@@ -1,1 +1,2 @@
-include *.md LICENSE CHANGES DEBT
+include *.md LICENSE CHANGES DEBT VERSION
+recursive-include inflector *.py
