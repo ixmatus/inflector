@@ -20,9 +20,6 @@ setup(name='Inflector',
       keywords="inflector text language english",
       packages=["inflector"],
       package_dir={'inflector': 'inflector'},
-      data_files=[
-          ("", ['README.md', 'LICENSE', 'VERSION'])
-      ],
       include_package_data=True,
       zip_safe=False,
       test_suite='tests'
