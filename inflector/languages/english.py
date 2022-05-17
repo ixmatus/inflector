@@ -39,7 +39,8 @@ class English(Base):
             ['(?i)$' , 's']
         ]
         
-        uncountable_words = ['equipment', 'information', 'rice', 'money', 'species', 'series', 'fish', 'sheep', 'deer']
+        uncountable_words = ['equipment', 'information', 'rice', 'money',
+            'species', 'series', 'fish', 'sheep', 'deer', 'moose']
         
         irregular_words = {
             'person' : 'people',
@@ -48,6 +49,8 @@ class English(Base):
             'sex' : 'sexes',
             'move' : 'moves',
             'staff' : 'staves',
+            'foot' : 'feet',
+            'goose' : 'geese',
         }
         
         lower_cased_word = word.lower();
