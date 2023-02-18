@@ -20,7 +20,7 @@ class English(Base):
         
         rules = [
             ['(?i)(quiz)$' , '\\1zes'],
-            ['^(?i)(ox)$' , '\\1en'],
+            ['(?i)^(ox)$' , '\\1en'],
             ['(?i)([m|l])ouse$' , '\\1ice'],
             ['(?i)(matr|vert|ind)ix|ex$' , '\\1ices'],
             ['(?i)(x|ch|ss|sh)$' , '\\1es'],
