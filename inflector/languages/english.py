@@ -53,7 +53,7 @@ class English(Base):
             'goose' : 'geese',
         }
         
-        lower_cased_word = word.lower();
+        lower_cased_word = word.lower()
         
         for uncountable_word in uncountable_words:
             if lower_cased_word[-1*len(uncountable_word):] == uncountable_word :
@@ -69,7 +69,7 @@ class English(Base):
             if match :
                 groups = match.groups()
                 for k in range(0,len(groups)) :
-                    if groups[k] == None :
+                    if groups[k] is None :
                         rules[rule][1] = rules[rule][1].replace('\\'+str(k+1), '')
                         
                 return re.sub(rules[rule][0], rules[rule][1], word)
@@ -105,9 +105,9 @@ class English(Base):
             ['(?i)([ti])a$' , '\\1um'],
             ['(?i)(n)ews$' , '\\1ews'],
             ['(?i)s$' , ''],
-        ];
+        ]
     
-        uncountable_words = ['equipment', 'information', 'rice', 'money', 'species', 'series', 'fish', 'sheep','sms'];
+        uncountable_words = ['equipment', 'information', 'rice', 'money', 'species', 'series', 'fish', 'sheep','sms']
     
         irregular_words = {
             'people' : 'person',
@@ -117,7 +117,7 @@ class English(Base):
             'moves' : 'move'
         }
     
-        lower_cased_word = word.lower();
+        lower_cased_word = word.lower()
     
         for uncountable_word in uncountable_words:
             if lower_cased_word[-1*len(uncountable_word):] == uncountable_word :
@@ -134,7 +134,7 @@ class English(Base):
             if match :
                 groups = match.groups()
                 for k in range(0,len(groups)) :
-                    if groups[k] == None :
+                    if groups[k] is None :
                         rules[rule][1] = rules[rule][1].replace('\\'+str(k+1), '')
                         
                 return re.sub(rules[rule][0], rules[rule][1], word)
